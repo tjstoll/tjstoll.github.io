@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TJ</title>
-
-    <meta charset='UTF-8'/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Comfortaa|Days+One|Doppio+One|Julius+Sans+One|Megrim|Orbitron" rel="stylesheet">
-    
-    <style>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale-1.0'/>
+  <title>taneisha</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Comfortaa|Days+One|Doppio+One|Julius+Sans+One|Megrim|Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
     html body {
       font-family: Verdana;
+      background: #000000;
     }
 
     /*The margins are set this way to collapse*/
@@ -18,8 +21,11 @@
     html {margin: 1px;}
 
     .landing {
-      background: linear-gradient(#3d2933,#1f141a);
-      height: 100vh;
+      background-image: url('tjstoll.github.io/media/IMG_0091.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,35 +39,119 @@
       font-family: 'Julius Sans One', cursive;
       letter-spacing: 1em;
     }
-      
-    @media screen and (min-width: 600px) {
-      #name {
-        font-size: 1.5em;
-      }
-    }
 
     .icons {
       display: flex;
+      font-size: 28px;
+      color: white;
     }
-      
-     img {
-       padding: 1em;
-     }
-  </style>
-  </head>
 
-  <body>
+    a, a:hover, a:visited {
+      color: white;
+    }
+
+    i {
+      padding: 0.5em;
+    }
+
+    .navigation {
+      background: #ffffff;
+      /*border: 2px solid pink;*/
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li {
+      text-decoration: none;
+      display: inline;
+      margin-right: 1em;
+    }
+
+    .about {
+      min-height: 100vh;
+      margin: 1em 0em 1em 0em;
+      background-image: url('tjstoll.github.io/media/IMG_0075.jpg');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .about-box {
+      max-width: 100%;
+      color: #ffffff;
+      padding: 0.5em;
+      margin: 2em 1em 2em 1em;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    @media screen and (min-width: 600px) {
+      .landing {
+        background-image: url('tjstoll.github.io/media/IMG_0260.jpg');
+      }
+
+      #name {
+        font-size: 1.5em;
+      }
+
+      .about-box {
+        max-width: 20em;
+      }
+
+      .about {
+        padding-right: 10em;
+      }
+    }
+  </style>
+</head>
+
+<body>
   <div class='landing'>
     <div id='name'><h1>taneisha stoll</h1></div>
-      <div class='icons'>
-        <a href='https://www.facebook.com/taneisha.stoll'>
-          <img src='tjstoll.github.io/FB-f-Logo__white_29.png'/>
-        </a>
-        <a href='www.linkedin.com/in/taneishastoll'>
-          <img src='tjstoll.github.io/In-White-28px-TM.png'/>
-        </a>
+  </div>
+
+  <div class='about'>
+    <div class='about-box'>
+      <h1>hey,<br>i'm taneisha</h1>
+      <hr>
+      <div style='text-align: justify;'>
+      <p>
+      i paint, i ride bikes, and i love sock monkeys. i even do some work on occasion. but there's really no such thing as work if you're doing the things you love.
+      </p>
+      <p>
+      when i'm not doing all that fun stuff i'm designing websites and studying astrophysics at u of t (the cool stuff).
+      </p>
       </div>
+      <hr>
     </div>
+  </div>
+
+  <div class='footer'>
+    <div class='icons'>
+      <a href='https://www.instagram.com/tjstoll_/'>
+        <i class='fa fa-instagram'></i>
+      </a>
+      <a href='https://ca.linkedin.com/in/taneisha-stoll-0348a8b7'>
+        <i class='fa fa-linkedin'></i>
+      </a>
+      <a href='https://github.com/'>
+        <i class='fa fa-github'></i>
+      </a>
+      <a href='https://www.facebook.com/taneisha.stoll'>
+        <i class='fa fa-facebook-official'></i>
+      </a>
+      <a href='mailto:taneishastoll@gmail.com'>
+        <i class='fa fa-envelope'></i>
+      </a>
     </div>
-  </body>
+  </div>
+</body>
 </html>
