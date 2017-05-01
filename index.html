@@ -2,139 +2,41 @@
 <html>
 <head>
   <meta charset='utf-8'/>
-  <meta name='viewport' content='width=device-width, initial-scale-1.0'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <title>taneisha</title>
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Comfortaa|Days+One|Doppio+One|Julius+Sans+One|Megrim|Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Comfortaa|Days+One|Doppio+One|Julius+Sans+One|Megrim|Orbitron|Anton|Bungee|Roboto|Rubik+Mono+One|Sarala" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <style>
-    html body {
-      font-family: Verdana;
-      background: #000000;
-    }
-
-    /*The margins are set this way to collapse*/
-    body {margin: -1px;}
-    html {margin: 1px;}
-
-    .landing {
-      background-image: url('tjstoll.github.io/media/IMG_0091.JPG');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #name {
-      color: white;
-      text-align: center;
-      font-size: 0.75em;
-      font-family: 'Julius Sans One', cursive;
-      letter-spacing: 1em;
-    }
-
-    .icons {
-      display: flex;
-      font-size: 28px;
-      color: white;
-    }
-
-    a, a:hover, a:visited {
-      color: white;
-    }
-
-    i {
-      padding: 0.5em;
-    }
-
-    .navigation {
-      background: #ffffff;
-      /*border: 2px solid pink;*/
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    li {
-      text-decoration: none;
-      display: inline;
-      margin-right: 1em;
-    }
-
-    .about {
-      min-height: 100vh;
-      margin: 1em 0em 1em 0em;
-      background-image: url('tjstoll.github.io/media/IMG_0075.JPG');
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
-    }
-
-    .about-box {
-      max-width: 100%;
-      color: #ffffff;
-      padding: 0.5em;
-      margin: 2em 1em 2em 1em;
-    }
-
-    .footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-    }
-
-    @media screen and (min-width: 600px) {
-      .landing {
-        background-image: url('tjstoll.github.io/media/IMG_0260.JPG');
-      }
-
-      #name {
-        font-size: 1.5em;
-      }
-
-      .about-box {
-        max-width: 20em;
-      }
-
-      .about {
-        padding-right: 10em;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href='style.css'>
 </head>
 
 <body>
-  <div class='landing'>
-    <div id='name'><h1>taneisha stoll</h1></div>
-  </div>
 
-  <div class='about'>
-    <div class='about-box'>
-      <h1>hey,<br>i'm taneisha</h1>
-      <hr>
-      <div style='text-align: justify;'>
-      <p>
-      i paint, i ride bikes, and i love sock monkeys. i even do some work on occasion. but there's really no such thing as work if you're doing the things you love.
-      </p>
-      <p>
-      when i'm not doing all that fun stuff i'm designing websites and studying astrophysics at u of t (the cool stuff).
-      </p>
+  <nav>
+    <div id='big-screen-nav'>
+      <div id='image' onclick="jumpTo('top',0)">
+        <h1>TJ</h1>
       </div>
-      <hr>
+      <p onclick="jumpTo('about',1)">about</p>
+      <p onclick="jumpTo('work',2)">education</p>
+      <p onclick="jumpTo('contact',3)">contact</p>
     </div>
-  </div>
+    <div id='small-screen-nav'>
+      <i class='fa fa-bars fa-2x' onclick='openMenu()'></i>
+    </div>
+  </nav>
 
-  <div class='footer'>
+  <div id='nav-box'>
+    <div style='width: 100%; font-size: 1.5em; color: white;'>
+    <i class='glyphicon glyphicon-remove' onclick='closeMenu()'></i>
+    </div>
+    <img src='tjstoll.github.io/media/logo-crop.png' height='150' onclick="jumpTo('top',0)">
+    <p onclick="jumpTo('about',1)">about</p>
+    <p onclick="jumpTo('work',2)">education</p>
+    <p onclick="jumpTo('contact',3)">contact</p>
     <div class='icons'>
       <a href='https://www.instagram.com/tjstoll_/'>
         <i class='fa fa-instagram'></i>
@@ -153,5 +55,82 @@
       </a>
     </div>
   </div>
+
+  <!-- STARTER IMAGE -->
+  <div class='landing'>
+    <div id='name'>
+      <img src='C:/Users/tanei/Documents/002 Coding Fun/Web Design/Project2 - Portfolio/Portfolio 2/Media/logo-crop.png' height='300' width='300'>
+      <h1>taneisha j stoll</h1>
+      <p>creating since 1995</p>
+    </div>
+  </div>
+
+  <!-- MEAT AND GRAVY OF THE SITE -->
+  <div class='content'>
+    <div class='about slide'>
+      <div id='text-box'>
+        <h1>hey,<br>i'm taneisha</h1>
+        <hr>
+        <div style='text-align: justify;'>
+          <p>
+            i paint, i ride bikes, and i love sock monkeys. i even do some work on occasion. but there's really no such thing as work if you're doing the things you love.
+          </p>
+          <p>
+            when i'm not doing all that fun stuff i'm designing websites and studying astrophysics at u of t (the cool stuff).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class='work slide'>
+      <div id='work-card'>
+        <h3>high school diploma</h3>
+        <h4>father john redmond school of the arts</h4>
+        <p>june 2013</p>
+      </div>
+      <div id='work-card'>
+        <h3>specialist, astronomy &amp physics (hbsc)</h3>
+        <h4>university of toronto</h4>
+        <p>september 2013 - 2018</p>
+      </div>
+      <div id='work-card'>
+        <h3>web development</h3>
+        <h4>independent</h4>
+        <p>may 2016 - present</p>
+      </div>
+    </div>
+
+      <div class='contact slide'>
+        <div id='text-box'>
+          <h3>let's keep in touch</h3>
+          <a href='mailto:taneishastoll@gmail.com'>
+            <i class='fa fa-envelope fa-3x'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- FOOTER -->
+  <footer class='footer'>
+    <div class='icons'>
+      <a href='https://www.instagram.com/tjstoll_/'>
+        <i class='fa fa-instagram'></i>
+      </a>
+      <a href='https://ca.linkedin.com/in/taneisha-stoll-0348a8b7'>
+        <i class='fa fa-linkedin'></i>
+      </a>
+      <a href='https://github.com/'>
+        <i class='fa fa-github'></i>
+      </a>
+      <a href='https://www.facebook.com/taneisha.stoll'>
+        <i class='fa fa-facebook-official'></i>
+      </a>
+      <a href='mailto:taneishastoll@gmail.com'>
+        <i class='fa fa-envelope'></i>
+      </a>
+    </div>
+  </footer>
+
+  <script rel='text/javascript' src='script.js'></script>
 </body>
 </html>
