@@ -10,7 +10,7 @@ function closeMenu() {
 }
 
 function jumpTo(section,a) {
-  // I had to do it this way becuase wtf
+  // Until I find a better way it shall remain this way
   var body = document.body;
   if (section == 'top') {
     body.scrollTop = 0;
