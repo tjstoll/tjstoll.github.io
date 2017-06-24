@@ -4,6 +4,8 @@ This code assumes a "mobile first" approach.
 
 html body {
   font-family: "Verdana", sans-serif;
+  background: url('media/003-granulated-loom.png');
+  background-attachment: fixed;
 }
 
 body {margin: -1px; letter-spacing: 1px;}
@@ -12,7 +14,7 @@ html {margin: 1px;}
 /* TOP BANNER --------------------------------------------------------------- */
 .topBanner {
   text-align: center;
-  background: #333;
+  background: rgba(17,17,17,0.8);
   color: #fff;
   padding: 0.5em;
   font-size: 0.8em;
@@ -25,14 +27,6 @@ html {margin: 1px;}
 /* CONTENT ------------------------------------------------------------------ */
 .content {
   min-height: 100vh;
-}
-
-.slide {
-  background-size: cover;
-  min-height: inherit;
-  padding: 1em;
-  display: flex;
-  overflow-y: hidden;
 }
 
 #text-box {
@@ -51,6 +45,12 @@ html {margin: 1px;}
   /*url('tjstoll.github.io/media/IMG_0737-edit.jpg');*/
   background-position: 75% 0%;
   background-attachment: fixed;
+  background-size: cover;
+  min-height: inherit;
+  box-sizing: border-box;
+  padding: 1em;
+  display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -67,7 +67,7 @@ html {margin: 1px;}
   justify-content: center;
   align-items: center;
   color: #ddd;
-  background: rgba(17,17,17,0.9);
+  background: rgba(10,10,10,0.8);
   padding: 2em 0em 2em 0em;
 }
 
