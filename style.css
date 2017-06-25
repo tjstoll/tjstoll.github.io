@@ -26,7 +26,8 @@ html {margin: 1px;}
 
 /* CONTENT ------------------------------------------------------------------ */
 .content {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
 }
 
 #text-box {
@@ -53,11 +54,16 @@ html {margin: 1px;}
   overflow-y: hidden;
   flex-direction: column;
   justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .about #text-box {
   min-width: 40%;
   background: rgba(26,0,0,0.3);
+}
+
+.twitterFeed {
+  display: none;
 }
 
 /* FOOTER ------------------------------------------------------------------- */
@@ -114,6 +120,10 @@ i {
 /* LARGER SCREEN STYLES ----------------------------------------------------- */
 @media screen and (min-width: 950px) {
 
+  .content {
+    height: 95vh;
+  }
+
   .about {
     background-position: top center;
     align-items: flex-start;
@@ -123,6 +133,22 @@ i {
 
   #text-box {
     max-width: 20em;
+  }
+
+  .twitterFeed {
+    display: block;
+    max-height: inherit;
+    overflow-y: scroll;
+    background: rgba(10,10,10,0.8);
+  }
+
+  .twitterFeed::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+  }
+
+  .twitterFeed::-webkit-scrollbar-thumb {
+    background: #ddd;
   }
 
   .footer {
