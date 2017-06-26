@@ -1,13 +1,8 @@
-/*
-This code assumes a "mobile first" approach.
-*/
+/*This code assumes a "mobile first" approach.*/
 
 html body {
   font-family: "Verdana", sans-serif;
-<<<<<<< HEAD
-=======
   /* Background pattern from Subtle Patterns (https://www.toptal.com/designers/subtlepatterns)*/
->>>>>>> Changes
   background: url('tjstoll.github.io/media/003-granulated-loom.png');
   background-attachment: fixed;
 }
@@ -15,77 +10,6 @@ html body {
 body {margin: -1px; letter-spacing: 1px;}
 html {margin: 1px;}
 
-<<<<<<< HEAD
-#image {
-  display: none;
-}
-
-/* MAIN AREA ---------------------------------------------------------------- */
-.landing {
-  min-height: 100vh;
-  background-image: url('https://stneishus.files.wordpress.com/2013/08/022.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#name {
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.75em;
-  font-family: 'Julius Sans One', cursive;
-  letter-spacing: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: -1px;
-  padding: 1em;
-  max-width: 100%;
-}
-
-/* NAVIGATION --------------------------------------------------------------- */
-nav #big-screen-nav {
-  display: none;
-}
-
-nav #small-screen-nav {
-  display: flex;
-  position: fixed;
-  color: rgba(255,255,255,0.7);
-}
-
-#nav-box {
-  z-index: 1;
-  min-height: 100vh;
-  min-width: 100%;
-  position: fixed;
-  background: rgba(10,0,0,0.9);
-  color: #ffffff;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  letter-spacing: 2px;
-}
-
-#nav-box img {
-  padding: 1em;
-}
-
-#nav-box p:hover, #big-screen-nav p:hover {
-  background: rgb(255,255,255);
-  color: rgb(10,0,0);
-  cursor: pointer;
-}
-
-#nav-box a {
-  color: white;
-=======
 /* TOP BANNER --------------------------------------------------------------- */
 .topBanner {
   text-align: center;
@@ -215,12 +139,10 @@ i {
     overflow-y: scroll;
     background: rgba(10,10,10,0.8);
   }
-
   .twitterFeed::-webkit-scrollbar {
     width: 10px;
     background: #000;
   }
-
   .twitterFeed::-webkit-scrollbar-thumb {
     background: #ddd;
   }*/
@@ -241,181 +163,4 @@ i {
     border-right: none;
   }
 
->>>>>>> Changes
-}
-/* CONTENT ------------------------------------------------------------------ */
-.content {
-  min-height: 100vh;
-}
-
-#slide-link {
-  min-height: inherit;
-}
-
-.slide {
-  background-size: cover;
-  min-height: inherit;
-  padding: 1em;
-  display: flex;
-  overflow-y: hidden;
-}
-
-#text-box {
-  background-color: rgba(0,0,0,0.5);
-  color: #ffffff;
-  padding: 1em;
-}
-
-#text-box p {
-  font-size: 16px;
-}
-
-.about {
-  background-image: linear-gradient(-160deg, rgba(255,255,255,0.0) 30%,rgba(0,20,51,0.7)), url('tjstoll.github.io/media/IMG_0737-edit.jpg');
-  background-position: center;
-  background-attachment: fixed;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.about #text-box {
-  min-width: 40%;
-  background: rgba(26,0,0,0.3);
-}
-
-.work {
-  background: rgba(26,0,0,0.7);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#work-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-width: 100%;
-  border: 1px solid #ffffff;
-  min-height: auto;
-  color: #ffffff;
-  padding: 1em;
-  margin-top: 1em;
-}
-
-.contact {
-  background-image: radial-gradient(rgba(10,10,16,0.7), rgb(10,10,16)), url('tjstoll.github.io/media/IMG_0028.JPG');
-  background-position: center center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact #text-box {
-  background-color: rgba(0,0,0,0.0);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact a {
-  color: #ffffff;
-}
-
-.contact a:hover {
-  color: #aaaaaa;
-}
-
-/* FOOTER ------------------------------------------------------------------- */
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-}
-
-.icons {
-  display: flex;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-a, a:visited {
-  color: #333333;
-}
-
-a:hover {
-  color: rgb(26,0,0);
-}
-
-i {
-  padding: 0.5em;
-}
-
-/* LARGER SCREEN STYLES ----------------------------------------------------- */
-@media screen and (min-width: 950px) {
-  nav #small-screen-nav {
-    display: none;
-  }
-
-  nav #big-screen-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    background-image: linear-gradient(rgba(26,0,0,0.5),rgba(0,0,0,0.0));
-    min-width: 100%;
-    min-height: 10%;
-  }
-
-  nav p {
-    padding: 0.5em;
-    color: rgba(255,255,255,0.7);
-  }
-
-  #image {
-    display: flex;
-    padding: 0.5em;
-    color: rgba(255,255,255,0.7);
-    border: 1px solid rgba(255,255,255,0.7);
-    margin: 1em 1em 1em 3em;
-    cursor: pointer;
-  }
-
-  #image h1 {
-    font-family: "Roboto";
-    font-size: 2em;
-    margin: -1px;
-  }
-
-  .about {
-    background-position: top center;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 5em;
-  }
-
-  #text-box {
-    max-width: 20em;
-  }
-
-  .work {
-    flex-direction: row;
-    align-content:flex-start;
-    justify-content: center;
-    padding: 5em;
-  }
-
-  #work-card {
-    min-width: 33%;
-    min-height: 20em;
-    margin: 1em;
-  }
-
-  .contact #text-box {
-    max-width: 100%;
-  }
 }
