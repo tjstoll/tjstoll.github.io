@@ -1,6 +1,4 @@
-/*
-This code assumes a "mobile first" approach.
-*/
+/*This code assumes a "mobile first" approach.*/
 
 html body {
   font-family: "Verdana", sans-serif;
@@ -42,7 +40,7 @@ html {margin: 1px;}
 }
 
 .about {
-  background-image: linear-gradient(-160deg, rgba(255,255,255,0.0) 30%,rgba(0,20,51,0.7)), url('tjstoll.github.io/media/IMG_0737-edit.jpg');
+  background-image: linear-gradient(-160deg, rgba(255,255,255,0.0) 30%,rgba(0,20,51,0.7)), url('tjstoll.github.io/media/IMG_0737-edit-min.jpg');
   background-position: 75% 0%;
   background-attachment: fixed;
   background-size: cover;
@@ -141,12 +139,10 @@ i {
     overflow-y: scroll;
     background: rgba(10,10,10,0.8);
   }
-
   .twitterFeed::-webkit-scrollbar {
     width: 10px;
     background: #000;
   }
-
   .twitterFeed::-webkit-scrollbar-thumb {
     background: #ddd;
   }*/
