@@ -1,0 +1,64 @@
+$white: #e5e5e5;
+$darkBlue: #133851;
+$blue: #13a6d1;
+$grey: #34454e;
+$darkGrey: #242124;
+
+// Button Styles
+.button-grey {
+  background: $grey;
+  color: $white;
+}
+.button-blue {
+  background: $blue;
+  color: $white;
+}
+
+// Background Styles
+.bg-white {
+  background: $white;
+  color: $darkGrey;
+  & button {
+    @extend .button-grey;
+  }
+}
+
+.bg-darkBlue {
+  background: $darkBlue;
+  color: $white;
+  & button {
+    @extend .button-blue;
+  }
+}
+
+.bg-blue {
+  background: $blue;
+  color: $darkBlue;
+  & button {
+    @extend .button-grey;
+  }
+}
+
+.bg-grey {
+  background: $grey;
+  color: $white;
+  & button {
+    @extend .button-blue;
+  }
+}
+
+.bg-darkGrey {
+  background: $darkGrey;
+  color: $blue;
+  & button {
+    @extend .button-blue;
+  }
+}
+
+.low-opacity {opacity: 0.8;}
+// Text Styles
+.text-white {color: $white;}
+.text-darkBlue {color: $darkBlue;}
+.text-blue {color: $blue;}
+.text-grey {color: $grey;}
+.text-darkGrey {color: $darkGrey;}

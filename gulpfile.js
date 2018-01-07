@@ -1,20 +1,68 @@
-var gulp        = require('gulp');
+// This is a good tutorial to get started with
+// https://css-tricks.com/gulp-for-beginners/
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var pug = require('gulp-pug');
 var browserSync = require('browser-sync').create();
-var reload      = browserSync.reload;
 
-// Save a reference to the `reload` method
+var sources = {
+  "styles": "src/styles/*.+(css|scss)",
+  "scripts": "src/scripts/*.js",
+  "images": "src/images/*.+(png|jpg|svg|JPG|PNG|SVG)",
+  "views": "src/views/*.+(html|pug)"
+};
+var dests = {
+  "css": "dist/css",
+  "js": "dist/js",
+  "images": "dist/images"
+};
 
-// Watch scss AND html files, doing different things with each.
-gulp.task('serve', function () {
+gulp.task('css', function() {
+  gulp.src(sources.styles)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(dests.css))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
 
-    // Serve files from the root of this project
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
+gulp.task('html', function() {
+  gulp.src(sources.views)
+    .pipe(pug())
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
 
-    gulp.watch("*.html").on("change", reload);
-    gulp.watch("*.css").on("change", reload);
-    gulp.watch("*.js").on("change", reload);
+gulp.task('js', function() {
+  gulp.src(sources.scripts)
+  .pipe(gulp.dest(dests.js))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
+
+gulp.task('img', function() {
+  gulp.src(sources.images)
+  .pipe(gulp.dest(dests.images))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'dist'
+    }
+  });
+});
+
+gulp.task('default', ['browserSync', 'html','css','js','img'], function() {
+  gulp.watch(sources.styles, ['css']);
+  gulp.watch(sources.views, ['html']);
+  gulp.watch(sources.scripts, ['js']);
+  gulp.watch(sources.images, ['img']);
 });

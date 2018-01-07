@@ -1,0 +1,137 @@
+// Navigation
+$main: $darkGrey;
+$accent: $blue;
+
+#navigation {
+  // border: 1px solid red;
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
+}
+
+.navigation {
+  // border: 1px solid blue;
+  margin: auto;
+  margin-left: 30px;
+  display: block;
+}
+
+.menuButton {
+  position: relative;
+  margin: 0;
+  color: lighten($main, 50%);
+  margin-bottom: 50px;
+  &:hover {
+    transition: 0.5s;
+    color: $accent;
+  }
+}
+
+.menu,.like {
+  &:hover {
+    .subMenu {
+      display: block;
+      animation: slideout 0.3s ease-out;
+    }
+  }
+}
+@keyframes slideout {
+  0% {opacity:0; margin-left:0px;}
+  100% {opacity:1;margin-left:20px;}
+}
+.like {
+  &:hover {
+    color: red;
+  }
+  i:hover {cursor: pointer;}
+}
+
+.subMenu {
+  display: none;
+  margin-left: 20px;
+  position: relative;
+  padding-left: 20px;
+  border-radius: 5px;
+  background: $main;
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: -9px;
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid $main;
+  }
+  ul {
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 5px 20px 5px 0px;
+    height: 100%;
+    color: darken($accent, 20%);
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+#like {
+  a {
+    color: $accent;
+    cursor: default;
+  }
+}
+
+// Landing Div
+.landing {
+  // background-image: linear-gradient(-160deg, rgba(255,255,255,0.0) 30%,rgba(0,20,51,0.7)), url(https://tjstoll.github.io/media/IMG_0028.JPG);
+  // background-position: 75% 0;
+  // background-position: bottom center;
+  // background-attachment: fixed;
+  // background-size: cover;
+
+  background-image: url(../images/IMG_0873.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+}
+
+// About div
+.about {
+  // background: url(https://tjstoll.github.io/media/IMG_0028.JPG);
+  // background-position: top center;
+  // background-size: cover;
+
+  background-image: linear-gradient(-160deg, rgba(255,255,255,0.0) 30%,rgba(0,20,51,0.7)), url(https://tjstoll.github.io/media/IMG_0737-edit-min.jpg);
+  background-position: 75% 0;
+  background-position: top center;
+  // background-attachment: fixed;
+  background-size: cover;
+}
+
+// Skillset
+.skill {
+  text-align: center;
+}
+.skills {
+  // border: 1px solid red;
+  // justify-content: space-between;
+  opacity: 0.5;
+  * {
+    margin-right: 0.5em;
+  }
+}
