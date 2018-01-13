@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen|Ubuntu");
+.button-grey, .bg-white button, .bg-blue button {
+  background: #34454e;
+  color: #e5e5e5; }
+
+.button-blue, .bg-darkBlue button, .bg-grey button, .bg-darkGrey button {
+  background: #13a6d1;
+  color: #e5e5e5; }
+
+.bg-white {
+  background: #e5e5e5;
+  color: #242124; }
+
+.bg-darkBlue {
+  background: #133851;
+  color: #e5e5e5; }
+
+.bg-blue {
+  background: #13a6d1;
+  color: #133851; }
+
+.bg-grey {
+  background: #34454e;
+  color: #e5e5e5; }
+
+.bg-darkGrey {
+  background: #242124;
+  color: #13a6d1; }
+
+.low-opacity {
+  opacity: 0.8; }
+
+.text-white {
+  color: #e5e5e5; }
+
+.text-darkBlue {
+  color: #133851; }
+
+.text-blue {
+  color: #13a6d1; }
+
+.text-grey {
+  color: #34454e; }
+
+.text-darkGrey {
+  color: #242124; }
+
+.button-main, .bg-accent button, .bg-secondary button {
+  background: #020202;
+  color: #fff; }
+
+.button-secondary, .bg-main button, .bg-tertiary button {
+  background: #fff;
+  color: #020202; }
+
+.bg-main {
+  background: #020202;
+  color: #fff; }
+
+.bg-accent {
+  background: #99ccff;
+  color: #020202; }
+
+.bg-secondary {
+  background: #fff;
+  color: #020202; }
+
+.bg-tertiary {
+  background: #333;
+  color: #fff; }
+
+.low-opacity {
+  opacity: 0.8; }
+
+.text-main {
+  color: #020202; }
+
+.text-accent {
+  color: #99ccff; }
+
+.text-secondary {
+  color: #fff; }
+
+.text-tertiary {
+  color: #333; }
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 100%; }
+
+.container {
+  padding: 30px 15%; }
+
+.block {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; }
+  .block + .block {
+    margin-left: 20px; }
+
+.flex1 {
+  flex: 1; }
+
+.flex2 {
+  flex: 2; }
+
+.flex3 {
+  flex: 3; }
+
+.width50 {
+  width: 50%; }
+
+.lg-height {
+  height: 100vh; }
+
+.md-height {
+  height: 85vh; }
+
+.sm-height {
+  height: 50vh; }
+
+.cc {
+  margin: auto; }
+
+.ct {
+  align-self: center; }
+
+.lc {
+  align-self: center; }
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  background: url(https://tjstoll.github.io/media/003-granulated-loom.png); }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: 'Oxygen', sans-serif; }
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.4em; }
+
+ul {
+  list-style: none;
+  margin: auto 0;
+  padding: auto 0; }
+
+li {
+  display: inline;
+  padding: 15px; }
+
+a {
+  text-decoration: none;
+  color: white;
+  outline: 0; }
+  a + a {
+    margin-left: 10px; }
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px 10px;
+  font-size: 1em;
+  outline: 0;
+  letter-spacing: 1px; }
+
+hr {
+  border: 0.6px solid; }
+
+#navigation {
+  position: fixed;
+  height: 100vh;
+  z-index: 100; }
+
+.navigation {
+  margin: auto;
+  margin-left: 30px;
+  display: block; }
+
+.menuButton {
+  position: relative;
+  margin: 0;
+  color: #828282;
+  margin-bottom: 50px; }
+  .menuButton:hover {
+    transition: 0.5s;
+    color: #99ccff; }
+
+.menu:hover .subMenu, .like:hover .subMenu {
+  display: block;
+  animation: slideout 0.3s ease-out; }
+
+@keyframes slideout {
+  0% {
+    opacity: 0;
+    margin-left: 0px; }
+  100% {
+    opacity: 1;
+    margin-left: 20px; } }
+
+.like:hover {
+  color: red; }
+
+.like i:hover {
+  cursor: pointer; }
+
+.subMenu {
+  display: none;
+  margin-left: 20px;
+  position: relative;
+  padding-left: 20px;
+  border-radius: 5px;
+  background: #020202; }
+  .subMenu::before {
+    position: absolute;
+    top: 8px;
+    left: -9px;
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #020202; }
+  .subMenu ul {
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .subMenu li {
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    margin: 0; }
+  .subMenu a {
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 5px 20px 5px 0px;
+    height: 100%;
+    color: #333; }
+    .subMenu a:hover {
+      color: #99ccff; }
+
+#like a {
+  color: #99ccff;
+  cursor: default; }
+
+.landing {
+  background-image: url(../images/IMG_1614_edit.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.about {
+  background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0) 30%, rgba(0, 20, 51, 0.7)), url(https://tjstoll.github.io/media/IMG_0737-edit-min.jpg);
+  background-position: 75% 0;
+  background-position: top center;
+  background-size: cover; }
+
+.skill {
+  text-align: center; }
+
+.skills {
+  opacity: 0.5; }
+  .skills * {
+    margin-right: 0.5em; }
