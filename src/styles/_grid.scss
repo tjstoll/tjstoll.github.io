@@ -1,9 +1,20 @@
 
 // Div Structures
+.container {
+  padding: 5rem 15%;
+}
+
 .section1 {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  position: relative;
+  & > .block {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .section2 {
@@ -11,21 +22,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  max-width: 100%;
-}
-
-.container {
-  padding: 30px 15%;
+  position: relative;
+  & > .block {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .block {
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 1rem;
   box-sizing: border-box;
-  & + .block {
-    margin-left: 20px;
-  }
 }
 
 // Div Spatial distributions
@@ -35,12 +43,17 @@
 
 // Div sizing
 .width50 {width: 50%;}
-.lg-height {height: 100vh;}
-.md-height {height: 85vh;}
-.sm-height {height: 50vh;}
+.lg-height {min-height: 100vh;}
+.md-height {min-height: 85vh;}
+.sm-height {min-height: 50vh;}
 
 // Div Alignments
 // c: centre, t: top, b: bottom, l: left, r: right
 .cc {margin: auto;}
 .ct {align-self: center;}
 .lc {align-self: center;}
+.lb {align-items: flex-end;}
+
+// Text Alignments
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}

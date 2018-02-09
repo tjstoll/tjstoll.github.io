@@ -1,50 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Oxygen|Ubuntu");
-.button-grey, .bg-white button, .bg-blue button {
-  background: #34454e;
-  color: #e5e5e5; }
-
-.button-blue, .bg-darkBlue button, .bg-grey button, .bg-darkGrey button {
-  background: #13a6d1;
-  color: #e5e5e5; }
-
-.bg-white {
-  background: #e5e5e5;
-  color: #242124; }
-
-.bg-darkBlue {
-  background: #133851;
-  color: #e5e5e5; }
-
-.bg-blue {
-  background: #13a6d1;
-  color: #133851; }
-
-.bg-grey {
-  background: #34454e;
-  color: #e5e5e5; }
-
-.bg-darkGrey {
-  background: #242124;
-  color: #13a6d1; }
-
-.low-opacity {
-  opacity: 0.8; }
-
-.text-white {
-  color: #e5e5e5; }
-
-.text-darkBlue {
-  color: #133851; }
-
-.text-blue {
-  color: #13a6d1; }
-
-.text-grey {
-  color: #34454e; }
-
-.text-darkGrey {
-  color: #242124; }
-
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
 .button-main, .bg-accent button, .bg-secondary button {
   background: #020202;
   color: #fff; }
@@ -56,18 +11,26 @@
 .bg-main {
   background: #020202;
   color: #fff; }
+  .bg-main hr {
+    border: 1px solid #fff; }
 
 .bg-accent {
-  background: #99ccff;
+  background: #ff005c;
   color: #020202; }
+  .bg-accent hr {
+    border: 1px solid #020202; }
 
 .bg-secondary {
   background: #fff;
   color: #020202; }
+  .bg-secondary hr {
+    border: 1px solid #020202; }
 
 .bg-tertiary {
   background: #333;
   color: #fff; }
+  .bg-tertiary hr {
+    border: 1px solid #fff; }
 
 .low-opacity {
   opacity: 0.8; }
@@ -76,7 +39,7 @@
   color: #020202; }
 
 .text-accent {
-  color: #99ccff; }
+  color: #ff005c; }
 
 .text-secondary {
   color: #fff; }
@@ -84,28 +47,66 @@
 .text-tertiary {
   color: #333; }
 
+body {
+  margin: 0; }
+
+html {
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.05rem; }
+
+h1, h2, h3, h4 {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2rem; }
+
+p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 0; }
+
+hr {
+  width: 100%; }
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 11px; } }
+
+.container {
+  padding: 5rem 15%; }
+
 .section1 {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
+  .section1 > .block {
+    margin-bottom: 1rem; }
+    .section1 > .block:last-child {
+      margin-bottom: 0; }
 
 .section2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  max-width: 100%; }
-
-.container {
-  padding: 30px 15%; }
+  position: relative; }
+  .section2 > .block {
+    margin-right: 1rem; }
+    .section2 > .block:last-child {
+      margin-right: 0; }
 
 .block {
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 1rem;
   box-sizing: border-box; }
-  .block + .block {
-    margin-left: 20px; }
 
 .flex1 {
   flex: 1; }
@@ -120,13 +121,13 @@
   width: 50%; }
 
 .lg-height {
-  height: 100vh; }
+  min-height: 100vh; }
 
 .md-height {
-  height: 85vh; }
+  min-height: 85vh; }
 
 .sm-height {
-  height: 50vh; }
+  min-height: 50vh; }
 
 .cc {
   margin: auto; }
@@ -137,49 +138,14 @@
 .lc {
   align-self: center; }
 
-body {
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  width: 100%;
-  background: url(https://tjstoll.github.io/media/003-granulated-loom.png); }
+.lb {
+  align-items: flex-end; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  font-family: 'Oxygen', sans-serif; }
+.text-center {
+  text-align: center; }
 
-p {
-  margin: 0;
-  margin-bottom: 10px;
-  line-height: 1.4em; }
-
-ul {
-  list-style: none;
-  margin: auto 0;
-  padding: auto 0; }
-
-li {
-  display: inline;
-  padding: 15px; }
-
-a {
-  text-decoration: none;
-  color: white;
-  outline: 0; }
-  a + a {
-    margin-left: 10px; }
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px 10px;
-  font-size: 1em;
-  outline: 0;
-  letter-spacing: 1px; }
-
-hr {
-  border: 0.6px solid; }
+.text-justify {
+  text-align: justify; }
 
 #navigation {
   position: fixed;
@@ -189,16 +155,19 @@ hr {
 .navigation {
   margin: auto;
   margin-left: 30px;
-  display: block; }
+  display: block;
+  font-size: 1rem; }
 
 .menuButton {
   position: relative;
   margin: 0;
   color: #828282;
   margin-bottom: 50px; }
+  .menuButton:last-child {
+    margin-bottom: 0; }
   .menuButton:hover {
-    transition: 0.5s;
-    color: #99ccff; }
+    transition: 0.3s;
+    color: #ff005c; }
 
 .menu:hover .subMenu, .like:hover .subMenu {
   display: block;
@@ -253,28 +222,25 @@ hr {
     height: 100%;
     color: #333; }
     .subMenu a:hover {
-      color: #99ccff; }
+      color: #ff005c; }
 
 #like a {
-  color: #99ccff;
+  color: #ff005c;
   cursor: default; }
 
+.logo {
+  position: absolute;
+  bottom: -150px;
+  z-index: 9999;
+  right: 50%; }
+
 .landing {
-  background-image: url(../images/IMG_1614_edit.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center; }
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/IMG_1360.JPG);
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed; }
 
-.about {
-  background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0) 30%, rgba(0, 20, 51, 0.7)), url(https://tjstoll.github.io/media/IMG_0737-edit-min.jpg);
-  background-position: 75% 0;
-  background-position: top center;
+.stack {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/IMG_0811.JPG);
+  background-position: center bottom;
   background-size: cover; }
-
-.skill {
-  text-align: center; }
-
-.skills {
-  opacity: 0.5; }
-  .skills * {
-    margin-right: 0.5em; }

@@ -1,50 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen|Ubuntu');
+// @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 body {
   margin: 0;
+}
+html {
+  font-size: 18px;
   font-family: 'Ubuntu', sans-serif;
-  width: 100%;
-  background: url(https://tjstoll.github.io/media/003-granulated-loom.png);
+  letter-spacing: 0.05rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4 {
+  font-family: 'Varela Round', sans-serif;
   margin: 0;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  font-family: 'Oxygen', sans-serif;
 }
+h1 {font-size: 5rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
 p {
+  font-size: 1.3rem;
+  line-height: 2rem;
   margin: 0;
-  margin-bottom: 10px;
-  line-height: 1.4em;
-}
-
-ul {
-  list-style: none;
-  margin: auto 0;
-  padding: auto 0;
-}
-li {
-  display: inline;
-  padding: 15px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  outline: 0;
-  & + a {margin-left: 10px;}
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px 10px;
-  font-size: 1em;
-  outline: 0;
-  letter-spacing: 1px;
 }
 
 hr {
-  border: 0.6px solid;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 11px;
+  }
 }

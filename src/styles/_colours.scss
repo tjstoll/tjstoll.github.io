@@ -1,64 +1,66 @@
-$white: #e5e5e5;
-$darkBlue: #133851;
-$blue: #13a6d1;
-$grey: #34454e;
-$darkGrey: #242124;
+$main: #020202; // Black
+$accent: #ff005c;//#e6005c; // Fierce Pink
+$secondary: #fff; // White
+$tertiary: #333; // Dark Grey
 
 // Button Styles
-.button-grey {
-  background: $grey;
-  color: $white;
+.button-main {
+  background: $main;
+  color: $secondary;
 }
-.button-blue {
-  background: $blue;
-  color: $white;
+.button-secondary {
+  background: $secondary;
+  color: $main;
 }
 
 // Background Styles
-.bg-white {
-  background: $white;
-  color: $darkGrey;
+.bg-main {
+  background: $main;
+  color: $secondary;
   & button {
-    @extend .button-grey;
+    @extend .button-secondary;
+  }
+  & hr {
+    border: 1px solid $secondary;
   }
 }
 
-.bg-darkBlue {
-  background: $darkBlue;
-  color: $white;
+.bg-accent {
+  background: $accent;
+  color: $main;
   & button {
-    @extend .button-blue;
+    @extend .button-main;
+  }
+  & hr {
+    border: 1px solid $main;
   }
 }
 
-.bg-blue {
-  background: $blue;
-  color: $darkBlue;
+.bg-secondary {
+  background: $secondary;
+  color: $main;
   & button {
-    @extend .button-grey;
+    @extend .button-main;
+  }
+  & hr {
+    border: 1px solid $main;
   }
 }
 
-.bg-grey {
-  background: $grey;
-  color: $white;
+.bg-tertiary {
+  background: $tertiary;
+  color: $secondary;
   & button {
-    @extend .button-blue;
+    @extend .button-secondary;
   }
-}
-
-.bg-darkGrey {
-  background: $darkGrey;
-  color: $blue;
-  & button {
-    @extend .button-blue;
+  & hr {
+    border: 1px solid $secondary;
   }
 }
 
 .low-opacity {opacity: 0.8;}
 // Text Styles
-.text-white {color: $white;}
-.text-darkBlue {color: $darkBlue;}
-.text-blue {color: $blue;}
-.text-grey {color: $grey;}
-.text-darkGrey {color: $darkGrey;}
+.text-main {color: $main;}
+.text-accent {color: $accent;}
+.text-secondary {color: $secondary;}
+.text-tertiary {color: $tertiary;}
