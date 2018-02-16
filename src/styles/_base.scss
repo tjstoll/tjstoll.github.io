@@ -1,0 +1,51 @@
+// @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+  margin: 0;
+  // background: url('https://tjstoll.github.io/media/003-granulated-loom.png');
+  background: url('../images/concrete-wall.png');
+  background-position: fixed;
+}
+html {
+  font-size: 11px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+}
+h1 {font-size: 5rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  // display: block;
+  // margin: 0;
+  // padding: 5px 20px 5px 0px;
+  // height: 100%;
+  color: $tertiary;//lighten($accent, 20%);
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Large Screens ---------------------------------------------------------------
+@media screen and (min-width: 950px) {
+  html {
+    font-size: 18px;
+  }
+}

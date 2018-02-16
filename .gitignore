@@ -1,3 +1,5 @@
-_index.html
-_style.css
-script.js
+node_modules
+dist/images
+dist/index2.html
+dist/styles.html
+src/images

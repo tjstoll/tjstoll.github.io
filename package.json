@@ -1,24 +1,23 @@
 {
-  "name": "tjstoll.github.io",
+  "name": "work-flow",
   "version": "1.0.0",
-  "description": "my new website",
+  "description": "A simple work-flow for web development projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "tjstoll",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tjstoll/tjstoll.github.io.git"
+    "url": "https://github.com/tjstoll/work-flow.git"
   },
-  "author": "TJSTOLL",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tjstoll/tjstoll.github.io/issues"
-  },
-  "homepage": "https://github.com/tjstoll/tjstoll.github.io#readme",
+  "license": "MIT",
   "devDependencies": {
-    "bower-sync": "^0.1.1",
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
   }
 }

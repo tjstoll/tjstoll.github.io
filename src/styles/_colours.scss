@@ -1,0 +1,66 @@
+$main: #020202; // Black
+$accent: #ff005c;//#e6005c; // Fierce Pink
+$secondary: #fff; // White
+$tertiary: #333; // Dark Grey
+
+// Button Styles
+.button-main {
+  background: $main;
+  color: $secondary;
+}
+.button-secondary {
+  background: $secondary;
+  color: $main;
+}
+
+// Background Styles
+.bg-main {
+  background: $main;
+  color: $secondary;
+  & button {
+    @extend .button-secondary;
+  }
+  & hr {
+    border: 1px solid $secondary;
+  }
+}
+
+.bg-accent {
+  background: $accent;
+  color: $main;
+  & button {
+    @extend .button-main;
+  }
+  & hr {
+    border: 1px solid $main;
+  }
+}
+
+.bg-secondary {
+  background: $secondary;
+  color: $main;
+  & button {
+    @extend .button-main;
+  }
+  & hr {
+    border: 1px solid $main;
+  }
+}
+
+.bg-tertiary {
+  background: $tertiary;
+  color: $secondary;
+  & button {
+    @extend .button-secondary;
+  }
+  & hr {
+    border: 1px solid $secondary;
+  }
+}
+
+.low-opacity {opacity: 0.8;}
+// Text Styles
+.text-main {color: $main;}
+.text-accent {color: $accent;}
+.text-secondary {color: $secondary;}
+.text-tertiary {color: $tertiary;}

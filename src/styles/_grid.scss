@@ -1,0 +1,67 @@
+
+// Div Structures
+.container {
+  padding: 5rem 10%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  & > .block {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: relative;
+  & > .block {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.block {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+// Div Spatial distributions
+.flex1 {flex: 1;}
+.flex2 {flex: 2;}
+.flex3 {flex: 3;}
+
+// Div sizing
+.width50 {width: 50%;}
+.lg-height {min-height: 100vh;}
+.md-height {min-height: 85vh;}
+.sm-height {min-height: 50vh;}
+
+// Div Alignments
+// c: centre, t: top, b: bottom, l: left, r: right
+.cc {margin: auto;}
+.ct {align-self: center;}
+.lc {align-self: center;}
+.lb {align-items: flex-end;}
+
+// Text Alignments
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+
+
+// Large Screens ---------------------------------------------------------------
+@media screen and (min-width: 950px) {
+  .container {
+    padding: 5rem 15%;
+  }
+}

@@ -1,0 +1,151 @@
+#navigation-large {
+  display: none;
+}
+
+#navigation-small {
+  display: block;
+}
+
+.menuButton {
+  padding: 1rem;
+}
+
+.logo {
+  position: absolute;
+  bottom: -150px;
+  z-index: 9999;
+  right: 50%;
+}
+
+// Sections --------------------------------------------------------------------
+
+.landing {
+  // background-image: linear-gradient(-160deg, rgba(255,255,255,0.0) 30%,rgba(0,20,51,0.7)), url(https://tjstoll.github.io/media/IMG_0737-edit-min.jpg);
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/IMG_1360.JPG);
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.stack {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/IMG_0811.JPG);
+  background-position: center bottom;
+  background-size: cover;
+  // background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  & > .block {margin:0;}
+}
+
+.highlight {
+  color: $accent;
+  font-weight: bold;
+}
+
+// Large Screens ----------------------------------------------------------------
+@media screen and (min-width: 950px) {
+
+  #navigation-small {
+    display: none;
+  }
+
+  #navigation-large {
+    // border: 1px solid red;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  .navigation {
+    // border: 1px solid blue;
+    margin: auto;
+    margin-left: 30px;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .menuButton {
+    position: relative;
+    margin: 0;
+    color: lighten($main, 50%);
+    margin-bottom: 50px;
+    // border: 1px solid red;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      transition: 0.3s;
+      color: $accent;
+    }
+    a {
+      color: lighten($main, 50%);
+      &:hover {color: $accent;}
+    }
+  }
+
+  .menu,.like {
+    &:hover {
+      .subMenu {
+        display: block;
+        animation: slideout 0.3s ease-out;
+      }
+    }
+  }
+  @keyframes slideout {
+    0% {opacity:0; margin-left:0px;}
+    100% {opacity:1;margin-left:20px;}
+  }
+  .like {
+    &:hover {
+      color: red;
+    }
+    i:hover {cursor: pointer;}
+  }
+
+  .subMenu {
+    display: none;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+    border-radius: 5px;
+    background: $main;
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: -9px;
+      content: '';
+      height: 0;
+      width: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 12px solid $main;
+    }
+    ul {
+      height: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      display: block;
+      margin: 0;
+      padding: 5px 20px 5px 0px;
+      height: 100%;
+    }
+  }
+
+  #like {
+    a {
+      color: $accent;
+      cursor: default;
+    }
+  }
+
+}
