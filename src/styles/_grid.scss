@@ -1,7 +1,7 @@
 
 // Div Structures
 .container {
-  padding: 5rem 15%;
+  padding: 5rem 10%;
 }
 
 .section1 {
@@ -57,3 +57,11 @@
 // Text Alignments
 .text-center {text-align: center;}
 .text-justify {text-align: justify;}
+
+
+// Large Screens ---------------------------------------------------------------
+@media screen and (min-width: 950px) {
+  .container {
+    padding: 5rem 15%;
+  }
+}

@@ -5,17 +5,20 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var browserSync = require('browser-sync').create();
+var cleanDest = require('gulp-clean-dest');
 
 var sources = {
   "styles": "src/styles/*.+(css|scss)",
   "scripts": "src/scripts/*.js",
   "images": "src/images/*.+(png|jpg|svg|JPG|PNG|SVG)",
-  "views": "src/views/*.+(html|pug)"
+  "views": "src/views/*.+(html|pug)",
+  "php": "src/php/*.php"
 };
 var dests = {
   "css": "dist/css",
   "js": "dist/js",
-  "images": "dist/images"
+  "images": "dist/images",
+  "php": "dist/php"
 };
 
 gulp.task('css', function() {
@@ -47,6 +50,14 @@ gulp.task('js', function() {
 gulp.task('img', function() {
   gulp.src(sources.images)
   .pipe(gulp.dest(dests.images))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
+
+gulp.task('php', function() {
+  gulp.src(sources.php)
+  .pipe(gulp.dest(dests.php))
   .pipe(browserSync.reload({
     stream: true
   }));

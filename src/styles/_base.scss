@@ -4,9 +4,12 @@
 
 body {
   margin: 0;
+  // background: url('https://tjstoll.github.io/media/003-granulated-loom.png');
+  background: url('../images/concrete-wall.png');
+  background-position: fixed;
 }
 html {
-  font-size: 18px;
+  font-size: 11px;
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0.05rem;
 }
@@ -28,8 +31,21 @@ hr {
   width: 100%;
 }
 
-@media screen and (max-width: 950px) {
+a {
+  text-decoration: none;
+  // display: block;
+  // margin: 0;
+  // padding: 5px 20px 5px 0px;
+  // height: 100%;
+  color: $tertiary;//lighten($accent, 20%);
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Large Screens ---------------------------------------------------------------
+@media screen and (min-width: 950px) {
   html {
-    font-size: 11px;
+    font-size: 18px;
   }
 }

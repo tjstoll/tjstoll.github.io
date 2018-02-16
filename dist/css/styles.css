@@ -48,10 +48,12 @@
   color: #333; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background: url("../images/concrete-wall.png");
+  background-position: fixed; }
 
 html {
-  font-size: 18px;
+  font-size: 11px;
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0.05rem; }
 
@@ -76,12 +78,18 @@ p {
 hr {
   width: 100%; }
 
-@media screen and (max-width: 950px) {
+a {
+  text-decoration: none;
+  color: #333; }
+  a:hover {
+    color: #ff005c; }
+
+@media screen and (min-width: 950px) {
   html {
-    font-size: 11px; } }
+    font-size: 18px; } }
 
 .container {
-  padding: 5rem 15%; }
+  padding: 5rem 10%; }
 
 .section1 {
   display: flex;
@@ -147,86 +155,18 @@ hr {
 .text-justify {
   text-align: justify; }
 
-#navigation {
-  position: fixed;
-  height: 100vh;
-  z-index: 100; }
+@media screen and (min-width: 950px) {
+  .container {
+    padding: 5rem 15%; } }
 
-.navigation {
-  margin: auto;
-  margin-left: 30px;
-  display: block;
-  font-size: 1rem; }
+#navigation-large {
+  display: none; }
+
+#navigation-small {
+  display: block; }
 
 .menuButton {
-  position: relative;
-  margin: 0;
-  color: #828282;
-  margin-bottom: 50px; }
-  .menuButton:last-child {
-    margin-bottom: 0; }
-  .menuButton:hover {
-    transition: 0.3s;
-    color: #ff005c; }
-
-.menu:hover .subMenu, .like:hover .subMenu {
-  display: block;
-  animation: slideout 0.3s ease-out; }
-
-@keyframes slideout {
-  0% {
-    opacity: 0;
-    margin-left: 0px; }
-  100% {
-    opacity: 1;
-    margin-left: 20px; } }
-
-.like:hover {
-  color: red; }
-
-.like i:hover {
-  cursor: pointer; }
-
-.subMenu {
-  display: none;
-  margin-left: 20px;
-  position: relative;
-  padding-left: 20px;
-  border-radius: 5px;
-  background: #020202; }
-  .subMenu::before {
-    position: absolute;
-    top: 8px;
-    left: -9px;
-    content: '';
-    height: 0;
-    width: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 12px solid #020202; }
-  .subMenu ul {
-    height: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-  .subMenu li {
-    display: inline-block;
-    height: 100%;
-    padding: 0;
-    margin: 0; }
-  .subMenu a {
-    text-decoration: none;
-    display: block;
-    margin: 0;
-    padding: 5px 20px 5px 0px;
-    height: 100%;
-    color: #333; }
-    .subMenu a:hover {
-      color: #ff005c; }
-
-#like a {
-  color: #ff005c;
-  cursor: default; }
+  padding: 1rem; }
 
 .logo {
   position: absolute;
@@ -243,4 +183,89 @@ hr {
 .stack {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/IMG_0811.JPG);
   background-position: center bottom;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .stack > .block {
+    margin: 0; }
+
+.highlight {
+  color: #ff005c;
+  font-weight: bold; }
+
+@media screen and (min-width: 950px) {
+  #navigation-small {
+    display: none; }
+  #navigation-large {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    z-index: 100; }
+  .navigation {
+    margin: auto;
+    margin-left: 30px;
+    display: block;
+    font-size: 1rem; }
+  .menuButton {
+    position: relative;
+    margin: 0;
+    color: #828282;
+    margin-bottom: 50px; }
+    .menuButton:last-child {
+      margin-bottom: 0; }
+    .menuButton:hover {
+      transition: 0.3s;
+      color: #ff005c; }
+    .menuButton a {
+      color: #828282; }
+      .menuButton a:hover {
+        color: #ff005c; }
+  .menu:hover .subMenu, .like:hover .subMenu {
+    display: block;
+    animation: slideout 0.3s ease-out; }
+  @keyframes slideout {
+    0% {
+      opacity: 0;
+      margin-left: 0px; }
+    100% {
+      opacity: 1;
+      margin-left: 20px; } }
+  .like:hover {
+    color: red; }
+  .like i:hover {
+    cursor: pointer; }
+  .subMenu {
+    display: none;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+    border-radius: 5px;
+    background: #020202; }
+    .subMenu::before {
+      position: absolute;
+      top: 8px;
+      left: -9px;
+      content: '';
+      height: 0;
+      width: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 12px solid #020202; }
+    .subMenu ul {
+      height: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .subMenu li {
+      display: inline-block;
+      height: 100%;
+      padding: 0;
+      margin: 0; }
+    .subMenu a {
+      display: block;
+      margin: 0;
+      padding: 5px 20px 5px 0px;
+      height: 100%; }
+  #like a {
+    color: #ff005c;
+    cursor: default; } }
