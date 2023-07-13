@@ -4,108 +4,97 @@
     <meta charset='utf-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <title>tj stoll | web developer</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://tjstoll.github.io/media/logo-crop.png"/>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Old FA -->
-    <script src="https://use.fontawesome.com/3c607a4c65.js"></script>
-    <!-- New FA -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/754f3acd5a.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <!-- NAVIGATION (lARGE SCREENS)-->
-    <div id='navigation-large' class='section1'>
-      <div class="navigation">
-        <div class="menuButton">
-          <a href='https://github.com/tjstoll'><i class="fab fa-github"></i></a>
-        </div>
-        <div class="menuButton">
-          <a href='https://codepen.io/tjstoll/'><i class="fab fa-codepen"></i></a>
-        </div>
-        <div class="menuButton">
-          <a href='mailto:taneishastoll@gmail.com'><i class="far fa-envelope"></i></a>
-        </div>
-      </div>
-    </div>
+    <header>
+        <nav class="text-secondary">
+          <ul>
+            <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#myWork"><i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </nav>
+    </header>
 
-    <!-- TOP BANNER -->
-    <div class="section1 bg-main" style='height: 2vh;'></div>
-
-    <!-- LANDING -->
-    <div class="container section1 md-height bg-main landing">
-      <div class="text-center cc" style='z-index:100;'>
-        <h1>hey, i'm <span class='text-accent'>TJ</span></h1>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <div class="container section1 md-height">
-      <div class="flex1 block section2">
-        <div class="flex1 text-center section1 block">
-          <div class="cc">
-            <h1>all<br>about<br><span class='text-accent'>me</span></h1>
+    <main>  
+      <section id="home" class="accent-scheme">
+        <div>
+          <img id="signature" src="images/logo-shadow.svg" alt="signature">
+          <div>
+            <h1 id="name">tj stoll</h1>
+            <h2 id="title">front-end developer</h2>
+            <button class="button-pop">contact</button>
           </div>
         </div>
-        <div class="flex2 section1 block">
-          <div class="cc text-justify">
-            <p>hey, i'm <span class='highlight'>TJ</span>. i am toronto born and (mostly) raised. i am an <span class='highlight'>astronomy and physics</span> graduate from the university of toronto with a passion for <span class='highlight'>web and software development</span>. i combine what i know with what i love to develop useful solutions for people just like <span class='highlight'>you</span>.</p>
+      </section>
+
+      <section id="about" class="secondary-scheme">
+        <img src="images/placeholder.svg" alt="portrait" width="100%">
+        <article>
+          <h2>about me</h2>
+          <p>hey, i'm TJ. i build things like games and apps.</p>
+          <p>check out my work below</p>
+        </article>
+      </section>
+
+      <section id="myWork" class="tertiary-scheme">
+        <h2>my work</h2>
+        <article id="works">
+          <div class="work">
+            <div class="poster">
+              <img src="images/tetris-game.PNG" alt="tetris">
+            </div>
+            <article>
+              <h2>tetris</h2>
+              <p>i created tetris from scratch</p>
+            </article>
           </div>
-        </div>
-      </div>
-      <div class="flex1 block">
-        <img src="images/IMG_1614_edit.jpg" alt="me" width='100%'>
-      </div>
-    </div>
+          <div class="work">
+            <div class="poster">
+              <img src="images/squash-game.PNG" alt="squash">
+            </div>
+            <article>
+              <h2>squash</h2>
+              <p>i built a game of squash</p>
+            </article>
+          </div>
+          <div class="work">
+            <div class="poster">
+              <img src="images/guessWord-game.PNG" alt="guessWord">
+            </div>
+            <article>
+              <h2>hangman</h2>
+              <p>i made a game of hangman from scratch</p>
+            </article>
+          </div>
+          <div class="work">
+            <div class="poster">
+              <img src="images/tag-game.PNG" alt="tetris-game">
+            </div>
+            <article>
+              <h2>tag</h2>
+              <p>i created a sort of game of tag</p>
+            </article>
+          </div>
+        </article>
+      </section>
 
-    <!-- MY STACK -->
-    <div class="container section2 bg-tertiary stack">
-      <div class="flex1 block text-center">
-        <h1>my</h1>
-        <p class='text-accent'><em>(growing)</em></p>
-        <h1>stack</h1>
-      </div>
-      <div class="flex2 block cc text-center">
-        <h1>
-          <i class="fab fa-python"></i>
-          <i class="fab fa-js"></i>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-github"></i>
-        </h1>
-      </div>
-    </div>
+      <section id="contact" class="accent-scheme">
+        <div>
+          <h2>let's work together</h2>
+          <button class="button-pop">contact</button>
+        </div>
+      </section>
+    </main>
 
-    <!-- PROJECTS -->
-    <div class="container section1 bg-main sm-height low-opacity">
-      <div class="section2 cc text-center">
-        <div class="flex1 block">
-          <a href='https://codepen.io/tjstoll/'><i class="fab fa-codepen fa-3x"></i></a>
-          <h2>see my code in action</h2>
-        </div>
-        <div class="flex1 block">
-          <a href="https://github.com/tjstoll"><i class="fas fa-code-branch fa-3x"></i></a>
-          <h2>see what i've worked on</h2>
-        </div>
-      </div>
-    </div>
+    <!-- <footer class="main-scheme">
+      <p>made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-code"></i> by tjstoll | 2023</p>
+     </footer> -->
 
-    <!-- FOOTER -->
-    <div class="container bg-main text-tertiary text-center">
-      <h4>made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> by tj stoll &#169; 2018 - 2023</h4>
-    </div>
-    <div id='navigation-small' class="section1 bg-main">
-      <div class="section2">
-        <div class="menuButton">
-          <a href='https://github.com/tjstoll'><i class="fab fa-github fa-2x"></i></a>
-        </div>
-        <div class="menuButton">
-          <a href='https://codepen.io/tjstoll/'><i class="fab fa-codepen fa-2x"></i></a>
-        </div>
-        <div class="menuButton">
-          <a href='mailto:taneishastoll@gmail.com'><i class="far fa-envelope fa-2x"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="section1 bg-accent" style='height: 2vh;'></div>
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>
