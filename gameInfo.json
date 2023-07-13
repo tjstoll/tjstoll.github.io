@@ -1,0 +1,25 @@
+{
+    "games": [
+        {
+            "name": "tetris",
+            "link": "https://codepen.io/tjstoll/full/oNPJoOJ",
+            "image": "images/placeholder.svg"
+    
+        },
+        {
+            "name": "pong",
+            "link": "https://codepen.io/tjstoll/full/xxJGgEz",
+            "image": "images/placeholder.svg"
+        },
+        {
+            "name": "hang man",
+            "link": "https://codepen.io/tjstoll/full/jOpqQwj",
+            "image": "images/placeholder.svg"
+        },
+        {
+            "name": "coming soon",
+            "link": "#",
+            "image": "images/placeholder.svg"
+        }
+    ]
+}

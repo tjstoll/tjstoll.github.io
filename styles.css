@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=VT323&family=Varela+Round&display=swap');
+
+/* Colour Schemes */
+* {
+    box-sizing: border-box;
+    --main: #020202; /*black*/
+    --accent: #ff005c;/*#ff005c; /*fierce pink*/
+    --secondary: #fff; /*white*/
+    --tertiary: #333; /*dark grey*/
+    --pop: rgb(77, 219, 255);
+}
+
+.main-scheme {
+    background-color: var(--main);
+    color: var(--secondary);
+}
+
+.accent-scheme {
+    background-color: var(--accent);
+    color: var(--secondary);
+}
+/* .accent-scheme button {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    border-color: var(--main);
+} */
+
+.secondary-scheme {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+}
+
+.tertiary-scheme {
+    background-color: var(--tertiary);
+    color: var(--accent);
+}
+
+.text-main {color: var(--main);}
+.text-accent {color: var(--accent);}
+.text-secondary {color: var(--secondary);}
+.text-tertiary {color: var(--tertiary);}
+.text-pop {color: var(--pop);}
+
+.button-pop {
+    background-color: var(--pop);/*linear-gradient(135deg, var(--pop), rgb(255, 136, 0));*/
+    color: var(--main);
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 10px var(--main);
+}
+
+/* Components */
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    display: flex;
+    gap: 2em;
+    text-shadow: 0px 2px 5px var(--main);
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li.active {
+    color: var(--pop);
+}
+
+main {
+    display: flex;
+    overflow-y: hidden;
+}
+
+button {
+    border: 1px solid;
+    font-family: 'Varela Round', sans-serif;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+}
+
+section {
+    padding: 3em 2em;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 5px 10px var(--main);
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Behaviours */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Specifics */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--accent) 60%, #e60058);
+    background-image: url("images/asfalt-dark.png");
+    text-shadow: 0px 5px 10px var(--main);
+}
+
+#signature {
+    height: 20em;
+    width: 20em;
+    opacity: 70%;
+}
+
+#about {
+    /* background-image: url("images/placeholder.svg");
+    background-position: center;
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+#myWork {
+    padding: 3em 1em;
+}
+
+#works {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-items: center; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.work {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    text-align: left;
+}
+.work img {
+    height: 100%;
+}
+
+.poster {
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding: 0.2em;
+}
