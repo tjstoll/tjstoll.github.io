@@ -16,18 +16,17 @@ $accent-color: #FFB800;
 $secondary-color: #fff;
 
 body {
-  background-color: $main-color;
-  color: $secondary-color;
-  margin: 0;
-  height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // margin: 0;
+  // height: 100vh;
+  // box-sizing: border-box;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  font-family: $main-font;
 }
 
-h1, p {
+button {
   font-family: $main-font;
 }
 
@@ -35,9 +34,6 @@ h2 {
   font-family: $header-font;
 }
 
-#placeholder {
-  img {
-    height: 200px;
-  }
-  text-align: center;
+#signature {
+  height: 200px;
 }

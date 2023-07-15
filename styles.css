@@ -7,18 +7,10 @@
   src: url(assets/fonts/koulen/Koulen-Regular.ttf);
 }
 body {
-  background-color: #0098A1;
-  color: #fff;
-  margin: 0;
-  height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: varelaRound, sans-serif;
 }
 
-h1, p {
+button {
   font-family: varelaRound, sans-serif;
 }
 
@@ -26,9 +18,6 @@ h2 {
   font-family: koulen, sans-serif;
 }
 
-#placeholder {
-  text-align: center;
-}
-#placeholder img {
+#signature {
   height: 200px;
 }
