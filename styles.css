@@ -1,5 +1,12 @@
+@font-face {
+  font-family: varelaRound;
+  src: url(assets/fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+@font-face {
+  font-family: koulen;
+  src: url(assets/fonts/koulen/Koulen-Regular.ttf);
+}
 body {
-  font: 100% Verdana, sans-serif;
   background-color: #0098A1;
   color: #fff;
   margin: 0;
@@ -9,6 +16,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+h1, p {
+  font-family: varelaRound, sans-serif;
+}
+
+h2 {
+  font-family: koulen, sans-serif;
 }
 
 #placeholder {
