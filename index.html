@@ -4,14 +4,81 @@
     <meta charset='utf-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="https://kit.fontawesome.com/754f3acd5a.js" crossorigin="anonymous"></script>
+
     <title>tj stoll | web developer</title>
   </head>
 
   <body>
-    <div id="placeholder">
-      <img src="assets/imgs/signature.svg" alt="tjstoll signature">
-      <h1>tjstoll | web developer</h1>
-    </div>
+    <nav></nav>
+
+    <main>
+      <!-- landing -->
+      <section>
+        <article>
+          <img src="assets/imgs/signature.svg" alt="tjstoll signature" id="signature">
+          <div>
+            <h1>full-stack web developer</h1>
+            <button>contact</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- about -->
+      <section>
+        <h2>hey, i'm TJ!</h2>
+        <p>i combine art and code to craft beautiful solutions for your tech needs</p>
+        <button>let's work together</button>
+      </section>
+
+      <!-- work -->
+      <section>
+        <h2>check out my work</h2>
+        <section>
+          <div id="carouselNavDots">
+            <i class="fa-solid fa-circle dot" id="active-dot"></i>
+          </div>
+          <article class="carousel-slide">
+            <img src="assets/imgs/signature.svg" alt="placeholder" width="100%">
+            <section>
+              <h3>project 1</h3>
+              <p>i cloned my favourite website</p>
+            </section>
+            <section>
+              <h4>tech stack:</h4>
+              <ul>
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <!-- contact -->
+      <section>
+        <h2>have a project in mind?</h2>
+        <p>getting in touch is easy!<br>find me at:</p>
+        <div>
+          <div>
+            <i class="fa-brands fa-codepen"></i>
+            <a href="#">codepen</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <a href="#">github</a>
+          </div>
+        </div>
+        <p>or email <a href="#">me@tjstoll.dev</a></p>
+      </section>
+
+      <footer>
+        <p>crafted and built by tjstoll | 2023</p>
+        <img src="assets/imgs/signature.svg" alt="tjstoll signature" height="20">
+      </footer>
+
+      <script src="carousel.js"></script>
+    </main>
   </body>
 </html>
