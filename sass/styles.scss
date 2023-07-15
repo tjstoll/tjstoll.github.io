@@ -1,0 +1,24 @@
+$font-stack: Verdana, sans-serif;
+$main-color: #0098A1;
+$accent-color: #FFB800;
+$secondary-color: #fff;
+
+body {
+  font: 100% $font-stack;
+  background-color: $main-color;
+  color: $secondary-color;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#placeholder {
+  img {
+    height: 200px;
+  }
+  text-align: center;
+}
