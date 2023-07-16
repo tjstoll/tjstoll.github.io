@@ -28,5 +28,6 @@ exports.default = function() {
     );
     watch('./sass/*.scss', css);
     watch('./views/*.pug', html);
+    watch('./carousel.js').on('change', browserSync.reload);
     watch('./*.html').on('change', browserSync.reload);
 }
