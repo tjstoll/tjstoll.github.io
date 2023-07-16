@@ -1,0 +1,57 @@
+//- <section>
+//-     <div id="carouselNavDots">
+//-     <i class="fa-solid fa-circle dot" id="active-dot"></i>
+//-     </div>
+//-     <article class="carousel-slide">
+//-         <img src="assets/imgs/signature.svg" alt="placeholder" width="100%">
+//-         <section>
+//-             <h3>project 1</h3>
+//-             <p>i cloned my favourite website</p>
+//-         </section>
+//-         <section>
+//-             <h4>tech stack:</h4>
+//-             <ul>
+//-             <li><i class="fa-brands fa-html5"></i></li>
+//-             <li><i class="fa-brands fa-css3-alt"></i></li>
+//-             <li><i class="fa-brands fa-js"></i></li>
+//-             </ul>
+//-         </section>
+//-         </article>
+//- </section>
+
+// library of projects
+-
+    const projects = [
+        {
+            id: 1,
+            name: "fronternd project",
+            description: "i cloned my favourite website",
+            img: "assets/imgs/signature",
+            tech_stack: ['html', 'css', 'js']
+        },
+        {
+            id: 2,
+            name: "javascript project",
+            description: "i built some of my favourite games",
+            img: "assets/imgs/signature",
+            tech_stack: ['js'], 
+        },
+        {
+            id: 3,
+            name: "full-stack project",
+            description: "i built an app front to back",
+            img: "assets/imgs/signature",
+            tech_stack: []
+        }];
+
+section
+    div#carouselNavDots
+        i.fa-solid.fa-circle.dot#active-dot
+    each project in projects
+        article.carouselSlide
+            img(src="assets/imgs/signature.svg" alt="project image" width="100%")
+            section
+                h3
+                    = project.name
+                p
+                    = project.description
