@@ -24,7 +24,7 @@
     const projects = [
         {
             id: 1,
-            name: "fronternd project",
+            name: "frontend project",
             description: "i cloned my favourite website",
             img: "assets/imgs/signature",
             tech_stack: ['html', 'css', 'js']
@@ -46,11 +46,12 @@
 
 section
     div#carouselNavDots
-        i.fa-solid.fa-circle.dot#active-dot
+        each project in projects
+            i.fa-solid.fa-circle.dot.carouselNavDot.inactiveDot
     each project in projects
-        article.carouselSlide
+        article.carouselSlide.inactiveSlide
             img(src="assets/imgs/signature.svg" alt="project image" width="100%")
-            section
+            section.carouselSlideInfo
                 h3
                     = project.name
                 p
