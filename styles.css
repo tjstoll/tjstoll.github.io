@@ -21,3 +21,19 @@ h2 {
 #signature {
   height: 200px;
 }
+
+.inactiveSlide {
+  display: none;
+}
+
+.activeSlide {
+  display: block;
+}
+
+.inactiveDot {
+  color: black;
+}
+
+.activeDot {
+  color: #0098A1;
+}
