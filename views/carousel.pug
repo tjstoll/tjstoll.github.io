@@ -47,12 +47,14 @@
 section
     div#carouselNavDots
         each project in projects
-            i.fa-solid.fa-circle.dot.carouselNavDot.inactiveDot
-    each project in projects
-        article.carouselSlide.inactiveSlide
-            img(src="assets/imgs/signature.svg" alt="project image" width="100%")
-            section.carouselSlideInfo
-                h3
-                    = project.name
-                p
-                    = project.description
+            button.carouselNavDot.inactiveDot
+                i.fa-solid.fa-circle.dot
+    section.carousel
+        each project in projects
+            article.carouselSlide.inactiveSlide
+                img(src="assets/imgs/signature.svg" alt="project image" width="100%")
+                section.carouselSlideInfo
+                    h3
+                        = project.name
+                    p
+                        = project.description
