@@ -15,6 +15,10 @@ $main-color: #0098A1;
 $accent-color: #FFB800;
 $secondary-color: #fff;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   // margin: 0;
   // height: 100vh;
@@ -28,6 +32,10 @@ body {
 
 button {
   font-family: $main-font;
+  &.carouselNavDot {
+    border: none;
+    background-color: rgba(0,0,0,0);
+  }
 }
 
 h2 {
@@ -53,3 +61,19 @@ h2 {
 .activeDot {
   color: $main-color;
 }
+
+// .carousel {
+//   display: flex;
+//   overflow: auto;
+//   max-width: 100%;
+//   scroll-snap-stop: always;
+//   scroll-snap-align: center;
+//   scroll-snap-type: x mandatory;
+// }
+
+// .carouselSlide {
+//   flex: 0 0 100%;
+//   scroll-snap-stop: always;
+//   scroll-snap-align: center;
+//   scroll-snap-type: x mandatory;
+// }
