@@ -1,0 +1,92 @@
+// Fonts and Colours
+@font-face {
+font-family: varelaRound;
+src: url(assets/fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+font-family: koulen;
+src: url(assets/fonts/koulen/Koulen-Regular.ttf);
+}
+
+$header-font: koulen, sans-serif;
+$main-font: varelaRound, sans-serif;
+
+$main-color: #0098A1;
+$accent-color: #FFB800;
+$secondary-color: #fff;
+$tertiary-color: #103F49;
+$grey: #D9D9D9;
+
+.main-scheme {
+    background-color: $main-color;
+    color: $secondary-color;
+    button {
+        color: $tertiary-color;
+        background-color: $accent-color;
+    }
+}
+
+.accent-scheme {
+    background-color: $accent-color;
+    color: $tertiary-color;
+}
+
+.secondary-scheme {
+    background-color: $secondary-color;
+    color: $tertiary-color;
+}
+
+.tertiary-scheme {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    margin: 0;
+}
+
+section {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    background-color: $tertiary-color;
+    color: $main-color;
+}
+
+h2, h3, h4 {
+    font-family: $header-font;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+button {
+    font-family: $main-font;
+    border: 1px solid $tertiary-color;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    color: $tertiary-color;
+    background-color: $accent-color;
+    font-size: 1em;
+
+    &.carouselNavDot {
+        border: none;
+        background-color: rgba(0,0,0,0);
+    }
+}
