@@ -1,49 +1,51 @@
-@font-face {
-  font-family: varelaRound;
-  src: url(assets/fonts/Varela_Round/VarelaRound-Regular.ttf);
-}
-
-@font-face {
-  font-family: koulen;
-  src: url(assets/fonts/koulen/Koulen-Regular.ttf);
-}
-
-$header-font: koulen, sans-serif;
-$main-font: varelaRound, sans-serif;
-
-$main-color: #0098A1;
-$accent-color: #FFB800;
-$secondary-color: #fff;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  // margin: 0;
-  // height: 100vh;
-  // box-sizing: border-box;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  font-family: $main-font;
-}
-
-button {
-  font-family: $main-font;
-  &.carouselNavDot {
-    border: none;
-    background-color: rgba(0,0,0,0);
-  }
-}
-
-h2 {
-  font-family: $header-font;
-}
+@use 'base';
 
 #signature {
   height: 200px;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/imgs/concrete-wall.png');
+}
+
+.work {
+  padding: 3em 2em 0 2em;
+  background-color: base.$grey;
+}
+
+.carousel {
+  padding: 0;
+  margin-top: 2em;
+}
+
+.carouselSlideInfo {
+  flex-grow: 1;
+  padding: 1em;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  li {
+    margin: 0;
+    display: inline;
+    padding: 0 3px;
+    font-size: 1.5em;
+  }
+  h4 {
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+#carouselNavDots {
+  padding: 1em;
 }
 
 .inactiveSlide {
@@ -51,15 +53,16 @@ h2 {
 }
 
 .activeSlide {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .inactiveDot {
-  color: black;
+  color: base.$tertiary-color;
 }
 
 .activeDot {
-  color: $main-color;
+  color: base.$main-color;
 }
 
 // .carousel {
