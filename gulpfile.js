@@ -7,7 +7,7 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 
 function css() {
-    return src('./sass/*.scss')
+    return src('./sass/styles.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(dest('./'))
         .pipe(browserSync.stream());
