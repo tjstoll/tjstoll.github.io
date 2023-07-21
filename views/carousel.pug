@@ -26,35 +26,41 @@
             id: 1,
             name: "frontend project",
             description: "i cloned my favourite website",
-            img: "assets/imgs/signature",
-            tech_stack: ['html', 'css', 'js']
+            img: "https://picsum.photos/300/200?random=1",
+            tech_stack: ['html5', 'css3-alt', 'js']
         },
         {
             id: 2,
             name: "javascript project",
             description: "i built some of my favourite games",
-            img: "assets/imgs/signature",
+            img: "https://picsum.photos/300/200?random=2",
             tech_stack: ['js'], 
         },
         {
             id: 3,
             name: "full-stack project",
             description: "i built an app front to back",
-            img: "assets/imgs/signature",
-            tech_stack: []
+            img: "https://picsum.photos/300/200?random=3",
+            tech_stack: ['sass', 'gulp', 'react']
         }];
 
-section
-    div#carouselNavDots
-        each project in projects
-            button.carouselNavDot.inactiveDot
-                i.fa-solid.fa-circle.dot
-    section.carousel
-        each project in projects
-            article.carouselSlide.inactiveSlide
-                img(src="assets/imgs/signature.svg" alt="project image" width="100%")
-                section.carouselSlideInfo
-                    h3
-                        = project.name
-                    p
-                        = project.description
+
+section.carousel.secondary-scheme
+    each project in projects
+        - const tech_stack = project.tech_stack
+        article.carouselSlide.inactiveSlide
+            img(src=`${project.img}` alt="project image" width="100%")
+            section.carouselSlideInfo
+                h3
+                    = project.name
+                p
+                    = project.description
+                h4 tech stack:
+                ul
+                    each tech in tech_stack
+                        li
+                            i(class=`fa-brands fa-${tech}`)
+div#carouselNavDots
+    each project in projects
+        button.carouselNavDot.inactiveDot
+            i.fa-solid.fa-circle.dot
