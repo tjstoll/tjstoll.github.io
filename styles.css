@@ -6,28 +6,124 @@
   font-family: koulen;
   src: url(assets/fonts/koulen/Koulen-Regular.ttf);
 }
+.main-scheme {
+  background-color: #0098A1;
+  color: #fff;
+}
+.main-scheme button {
+  color: #103F49;
+  background-color: #FFB800;
+}
+
+.accent-scheme {
+  background-color: #FFB800;
+  color: #103F49;
+}
+
+.secondary-scheme {
+  background-color: #fff;
+  color: #103F49;
+}
+
+.tertiary-scheme {
+  background-color: #103F49;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: varelaRound, sans-serif;
+  margin: 0;
+}
+
+section {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  background-color: #103F49;
+  color: #0098A1;
+}
+
+h2, h3, h4 {
+  font-family: koulen, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 2px;
+  margin: 0;
 }
 
 button {
   font-family: varelaRound, sans-serif;
+  border: 1px solid #103F49;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  color: #103F49;
+  background-color: #FFB800;
+  font-size: 1em;
 }
 button.carouselNavDot {
   border: none;
   background-color: rgba(0, 0, 0, 0);
 }
 
-h2 {
-  font-family: koulen, sans-serif;
-}
-
 #signature {
   height: 200px;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/imgs/concrete-wall.png");
+}
+
+.work {
+  padding: 3em 2em 0 2em;
+  background-color: #D9D9D9;
+}
+
+.carousel {
+  padding: 0;
+  margin-top: 2em;
+}
+
+.carouselSlideInfo {
+  flex-grow: 1;
+  padding: 1em;
+}
+.carouselSlideInfo ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.carouselSlideInfo li {
+  margin: 0;
+  display: inline;
+  padding: 0 3px;
+  font-size: 1.5em;
+}
+.carouselSlideInfo h4 {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+#carouselNavDots {
+  padding: 1em;
 }
 
 .inactiveSlide {
@@ -35,11 +131,12 @@ h2 {
 }
 
 .activeSlide {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .inactiveDot {
-  color: black;
+  color: #103F49;
 }
 
 .activeDot {
