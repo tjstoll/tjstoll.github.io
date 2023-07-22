@@ -6,30 +6,6 @@
   font-family: koulen;
   src: url(assets/fonts/koulen/Koulen-Regular.ttf);
 }
-.main-scheme {
-  background-color: #0098A1;
-  color: #fff;
-}
-.main-scheme button {
-  color: #103F49;
-  background-color: #FFB800;
-}
-
-.accent-scheme {
-  background-color: #FFB800;
-  color: #103F49;
-}
-
-.secondary-scheme {
-  background-color: #fff;
-  color: #103F49;
-}
-
-.tertiary-scheme {
-  background-color: #103F49;
-  color: #fff;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -83,6 +59,8 @@ button.carouselNavDot {
 }
 
 .landing {
+  background-color: #0098A1;
+  color: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,13 +68,26 @@ button.carouselNavDot {
   align-items: center;
   background-image: url("./assets/imgs/concrete-wall.png");
 }
+.landing button {
+  color: #103F49;
+  background-color: #FFB800;
+}
+
+.about {
+  background-color: #fff;
+  color: #103F49;
+}
 
 .work {
+  background-color: #D9D9D9;
+  color: #103F49;
   padding: 3em 2em 0 2em;
   background-color: #D9D9D9;
 }
 
 .carousel {
+  background-color: #fff;
+  color: #103F49;
   padding: 0;
   margin-top: 2em;
 }
@@ -141,4 +132,27 @@ button.carouselNavDot {
 
 .activeDot {
   color: #0098A1;
+}
+
+.contact {
+  background-color: #FFB800;
+  color: #103F49;
+  background-image: url("./assets/imgs/concrete-wall.png");
+}
+.contact a {
+  color: #103F49;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+}
+.contact-card i {
+  font-size: 2em;
 }
