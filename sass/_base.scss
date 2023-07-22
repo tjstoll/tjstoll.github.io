@@ -18,7 +18,7 @@ $secondary-color: #fff;
 $tertiary-color: #103F49;
 $grey: #D9D9D9;
 
-.main-scheme {
+@mixin main-scheme() {
     background-color: $main-color;
     color: $secondary-color;
     button {
@@ -27,19 +27,27 @@ $grey: #D9D9D9;
     }
 }
 
-.accent-scheme {
+@mixin accent-scheme() {
     background-color: $accent-color;
     color: $tertiary-color;
+    a {
+        color: $tertiary-color;
+    }
 }
 
-.secondary-scheme {
+@mixin secondary-scheme() {
     background-color: $secondary-color;
     color: $tertiary-color;
 }
 
-.tertiary-scheme {
+@mixin tertiary-scheme() {
     background-color: $tertiary-color;
     color: $secondary-color;
+}
+
+@mixin grey-scheme() {
+    background-color: $grey;
+    color: $tertiary-color;
 }
 
 * {
