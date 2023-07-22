@@ -14,42 +14,46 @@
 
     <main>
       <!-- landing -->
-      <section class='landing main-scheme'>
+      <section class='landing'>
         <article>
           <img src="assets/imgs/signature.svg" alt="tjstoll signature" id="signature">
           <div>
             <h1>front-end web developer</h1>
-            <button>contact</button>
+            a(href="#contact")
+              button contact
           </div>
         </article>
       </section>
 
       <!-- about -->
-      <section class='about secondary-scheme'>
+      <section class='about'>
         <h2>hey, i'm TJ!</h2>
         <p>i combine art and code to craft beautiful solutions for your tech needs</p>
-        <button>let's work together</button>
+        a(href="#contact")
+          button let's work together 
       </section>
 
       <!-- work -->
-      <section class="work secondary-scheme">
+      <section class="work">
         <h2>check out my work</h2>
         include carousel.pug
         
       </section>
 
       <!-- contact -->
-      <section class='contact accent-scheme'>
+      <section class='contact' id="contact">
         <h2>have a project in mind?</h2>
         <p>getting in touch is easy!<br>find me at:</p>
-        <div>
-          <div>
-            <i class="fa-brands fa-codepen"></i>
-            <a href="#">codepen</a>
+        <div class="contact-cards">
+          <div class="contact-card">
+            a(href="https://codepen.io/tjstoll" target="_blank") 
+              <i class="fa-brands fa-codepen"></i>
+              <p>codepen</p>
           </div>
-          <div>
-            <i class="fa-brands fa-github"></i>
-            <a href="#">github</a>
+          <div class="contact-card">
+            a(href="https://github.com/tjstoll" target="_blank") 
+              <i class="fa-brands fa-github"></i>
+              <p>github</p>
           </div>
         </div>
         <p>or email <a href="#">me@tjstoll.dev</a></p>
