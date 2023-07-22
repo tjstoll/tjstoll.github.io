@@ -5,6 +5,7 @@
 }
 
 .landing {
+  @include base.main-scheme;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,12 +14,18 @@
   background-image: url('./assets/imgs/concrete-wall.png');
 }
 
+.about {
+  @include base.secondary-scheme;
+}
+
 .work {
+  @include base.grey-scheme;
   padding: 3em 2em 0 2em;
   background-color: base.$grey;
 }
 
 .carousel {
+  @include base.secondary-scheme;
   padding: 0;
   margin-top: 2em;
 }
@@ -80,3 +87,21 @@
 //   scroll-snap-align: center;
 //   scroll-snap-type: x mandatory;
 // }
+
+.contact {
+  @include base.accent-scheme;
+  background-image: url("./assets/imgs/concrete-wall.png");
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  i {
+    font-size: 2em;
+  }
+}
