@@ -30,6 +30,11 @@ footer {
   background-color: #103F49;
   color: #0098A1;
 }
+footer .tjstoll-signature {
+  height: 20px;
+  width: fit-content;
+  fill: #0098A1;
+}
 
 h2, h3, h4 {
   font-family: koulen, sans-serif;
@@ -38,6 +43,10 @@ h2, h3, h4 {
 h1, h2, h3, h4 {
   letter-spacing: 2px;
   margin: 0;
+}
+
+h1 {
+  text-shadow: 1px 3px 5px #103F49;
 }
 
 button {
@@ -54,10 +63,6 @@ button.carouselNavDot {
   background-color: rgba(0, 0, 0, 0);
 }
 
-#signature {
-  height: 200px;
-}
-
 .landing {
   background-color: #0098A1;
   color: #fff;
@@ -67,10 +72,15 @@ button.carouselNavDot {
   justify-content: center;
   align-items: center;
   background-image: url("./assets/imgs/concrete-wall.png");
+  overflow: hidden;
 }
 .landing button {
   color: #103F49;
   background-color: #FFB800;
+}
+.landing .tjstoll-signature {
+  width: 120vw;
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .about {
@@ -155,4 +165,30 @@ button.carouselNavDot {
 }
 .contact-card i {
   font-size: 2em;
+}
+
+@media screen and (min-width: 750px) {
+  .landing .tjstoll-signature {
+    width: auto;
+  }
+  .work {
+    padding: 3em 2em;
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: inherit;
+  }
+  .carouselSlide {
+    background-color: #fff;
+    color: #103F49;
+  }
+  .inactiveSlide {
+    display: flex;
+    flex-direction: column;
+  }
+  #carouselNavDots {
+    display: none;
+  }
 }
