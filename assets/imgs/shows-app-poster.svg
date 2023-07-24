@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="200"
+   viewBox="0 0 79.374998 52.916667"
+   version="1.1"
+   id="svg3111"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="shows-app-poster.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3113"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="118.44039"
+     inkscape:cy="125.86501"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3108">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4214">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4210" />
+      <stop
+         style="stop-color:#454545;stop-opacity:1;"
+         offset="1"
+         id="stop4212" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4214"
+       id="linearGradient4305"
+       x1="-3.7500001e-07"
+       y1="26.458332"
+       x2="79.375"
+       y2="26.458332"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient4305);stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke;fill-opacity:1"
+       id="rect3284"
+       width="79.375"
+       height="52.916668"
+       x="-3.7500001e-07"
+       y="-8.8578287e-07"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:18.4202px;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="39.683002"
+       y="39.901157"
+       id="text3340"><tspan
+         sodipodi:role="line"
+         id="tspan3338"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.4202px;font-family:Impact;-inkscape-font-specification:'Impact, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.529166"
+         x="39.683002"
+         y="39.901157">SHOWS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.8958px;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="38.333096"
+       y="23.88644"
+       id="text4089"><tspan
+         sodipodi:role="line"
+         id="tspan4087"
+         style="fill:#ffffff;stroke-width:0.529167"
+         x="38.333096"
+         y="23.88644">SHOW ME</tspan></text>
+  </g>
+</svg>
