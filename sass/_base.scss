@@ -73,6 +73,11 @@ footer {
     gap: 10px;
     background-color: $tertiary-color;
     color: $main-color;
+    .tjstoll-signature {
+        height: 20px;
+        width: fit-content;
+        fill: $main-color;
+    }
 }
 
 h2, h3, h4 {
@@ -82,6 +87,10 @@ h2, h3, h4 {
 h1, h2, h3, h4 {
     letter-spacing: 2px;
     margin: 0;
+}
+
+h1 {
+    text-shadow: 1px 3px 5px $tertiary-color;
 }
 
 button {
