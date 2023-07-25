@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="200"
+   viewBox="0 0 79.374998 52.916666"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="js-games-poster.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.9064254"
+     inkscape:cx="136.64316"
+     inkscape:cy="82.353078"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1172">
+      <stop
+         style="stop-color:#871e00;stop-opacity:1;"
+         offset="0"
+         id="stop1170" />
+      <stop
+         style="stop-color:#320032;stop-opacity:1;"
+         offset="1"
+         id="stop1168" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1172"
+       id="radialGradient1174"
+       cx="39.687595"
+       cy="66.145836"
+       fx="39.687595"
+       fy="66.145836"
+       r="39.6875"
+       gradientTransform="matrix(3.9926772e-7,-1.3333331,0.99999998,-1.1478015e-7,-26.458351,105.83345)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#radialGradient1174);fill-opacity:1;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       id="rect234"
+       width="79.375"
+       height="52.916664"
+       x="-7.5000003e-07"
+       y="7.7156574e-07"
+       inkscape:label="background"
+       sodipodi:insensitive="true" />
+    <path
+       id="path1302"
+       style="fill:#2b0000;fill-opacity:1;stroke-width:0.529165;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       inkscape:label="controller bottom"
+       d="m 29.250496,21.21385 a 7.8524875,7.8524875 0 0 0 -5.77365,9.486204 7.8524875,7.8524875 0 0 0 9.486205,5.773651 l 15.259855,-3.712556 a 7.8524875,7.8524875 0 0 0 5.773651,-9.486203 7.8524875,7.8524875 0 0 0 -9.486206,-5.773651 z m 0.928139,3.814964 a 3.9262437,3.9262437 0 0 1 4.743102,2.886824 3.9262437,3.9262437 0 0 1 -2.886825,4.743103 3.9262437,3.9262437 0 0 1 -4.743102,-2.886825 3.9262437,3.9262437 0 0 1 2.886825,-4.743102 z m 15.173422,-3.691526 0.172866,-0.04205 c 0.656618,-0.159747 1.313579,0.240104 1.473327,0.89672 l 0.330432,1.358185 1.358186,-0.330431 c 0.656616,-0.159747 1.313948,0.240329 1.473697,0.896946 l 0.04205,0.172865 c 0.159748,0.656617 -0.240401,1.313651 -0.897017,1.473399 l -1.358187,0.330431 0.330432,1.358188 c 0.159747,0.656616 -0.24003,1.313876 -0.896648,1.473624 l -0.172866,0.04205 C 46.551713,29.126962 45.89438,28.726886 45.734633,28.070269 L 45.4042,26.712082 44.046015,27.042514 c -0.656618,0.159748 -1.31358,-0.240102 -1.473327,-0.89672 l -0.04205,-0.172865 c -0.159748,-0.656617 0.24003,-1.313877 0.896648,-1.473625 l 1.358186,-0.330432 -0.330432,-1.358185 c -0.159748,-0.656616 0.240402,-1.313651 0.897017,-1.473399 z" />
+    <path
+       id="rect1159"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.529165;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       inkscape:label="controller top"
+       d="m 29.250496,20.684683 a 7.8524875,7.8524875 0 0 0 -5.77365,9.486204 7.8524875,7.8524875 0 0 0 9.486205,5.773651 l 15.259855,-3.712556 a 7.8524875,7.8524875 0 0 0 5.773651,-9.486203 7.8524875,7.8524875 0 0 0 -9.486206,-5.773651 z m 0.928139,3.814964 a 3.9262437,3.9262437 0 0 1 4.743102,2.886824 3.9262437,3.9262437 0 0 1 -2.886825,4.743103 3.9262437,3.9262437 0 0 1 -4.743102,-2.886825 3.9262437,3.9262437 0 0 1 2.886825,-4.743102 z m 15.173422,-3.691526 0.172866,-0.04205 c 0.656618,-0.159747 1.313579,0.240104 1.473327,0.89672 l 0.330432,1.358185 1.358186,-0.330431 c 0.656616,-0.159747 1.313948,0.240329 1.473697,0.896946 l 0.04205,0.172865 c 0.159748,0.656617 -0.240401,1.313651 -0.897017,1.473399 l -1.358187,0.330431 0.330432,1.358188 c 0.159747,0.656616 -0.24003,1.313876 -0.896648,1.473624 l -0.172866,0.04205 C 46.551713,28.597795 45.89438,28.197719 45.734633,27.541102 L 45.4042,26.182915 44.046015,26.513347 c -0.656618,0.159748 -1.31358,-0.240102 -1.473327,-0.89672 l -0.04205,-0.172865 c -0.159748,-0.656617 0.24003,-1.313877 0.896648,-1.473625 L 44.785472,23.639705 44.45504,22.28152 c -0.159748,-0.656616 0.240402,-1.313651 0.897017,-1.473399 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11111px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#2b0000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="39.092602"
+       y="10.75062"
+       id="text1287"
+       inkscape:label="javascript bottom"><tspan
+         sodipodi:role="line"
+         id="tspan1285"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11111px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.529167"
+         x="39.092602"
+         y="10.75062">javascript</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11111px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="39.092602"
+       y="10.221454"
+       id="text383"
+       inkscape:label="javacript top"><tspan
+         sodipodi:role="line"
+         id="tspan381"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11111px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.529167"
+         x="39.092602"
+         y="10.221454">javascript</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.1408px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#2b0000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="38.645203"
+       y="46.164825"
+       id="text1291"
+       inkscape:label="games bottom"><tspan
+         sodipodi:role="line"
+         id="tspan1289"
+         style="fill:#2b0000;stroke-width:0.529167"
+         x="38.645203"
+         y="46.164825">games</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.1408px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       x="38.645203"
+       y="45.635658"
+       id="text489"
+       inkscape:label="games top"><tspan
+         sodipodi:role="line"
+         id="tspan487"
+         style="stroke-width:0.529167"
+         x="38.645203"
+         y="45.635658">games</tspan></text>
+  </g>
+</svg>
