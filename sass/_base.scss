@@ -58,7 +58,10 @@ body {
     font-family: $main-font;
     margin: 0;
 }
-
+nav {
+    height: 10px;
+    @include tertiary-scheme;
+}
 section {
     padding: 3em 2em;
     text-align: center;
